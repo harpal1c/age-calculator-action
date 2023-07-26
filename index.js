@@ -4,7 +4,7 @@ const { AgeFromDateString } = require('age-calculator');
 try {
   const date = core.getInput('date');
   const age = new AgeFromDateString(date).age.toString();
-  core.setOutput('age', age);
+  core.setOutput('age1', age);
 } catch (error) {
   core.setFailed(error.message);
 }
